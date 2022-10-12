@@ -30,6 +30,7 @@ textarea {
   border-style: dashed;
   border-color: black;
   height: 30%;
+  background-color: gray;
 }
 
 .row {
