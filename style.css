@@ -1,4 +1,10 @@
-body {
+:root {
+  --purple: #7986e6;
+  --yellow: #E6D97A;
+  --grey: #4d5c52;
+}
+  
+  body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   line-height: 1;
@@ -28,7 +34,7 @@ textarea {
 .time-block {
   text-align: center;
   border-style: dashed;
-  border-color: black;
+  border-color: pink;
   height: 30%;
 }
 
@@ -77,13 +83,13 @@ textarea {
 }
 
 .current {
-  background-color: green;
+  background-color: var(--purple);
 }
 
 .upNext {
-  background-color: blue;
+  background-color: var(--yellow);
 }
 
 .previous {
-  background-color: grey;
+  background-color: var(--grey);
 }

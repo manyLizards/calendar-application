@@ -12,6 +12,7 @@ var two = document.querySelector("#two");
 var three = document.querySelector("#three");
 var four = document.querySelector("#four");
 var five = document.querySelector("#five");
+var saveBtn = document.querySelectorAll(".save");
 
 // Set the current Day at the top of the scheduler
 $('#currentDay').text(currentDate.format("ddd, MMM, Do, YYYY"));
@@ -34,7 +35,6 @@ var timeBlocks = [
     four,
     five,
 ]
-console.log(currentTime)
 
 function colorCode () {
 for (i=0; i<timeBlocks.length; i++) {
@@ -48,3 +48,16 @@ for (i=0; i<timeBlocks.length; i++) {
 }
 }
 colorCode()
+
+
+var task = localStorage.getItem("task")
+//SaveBtn EventListener not working am going to try using an array for each hour
+saveBtn.addEventListener("click", function saveTask() {
+    var userInputLocker = document.createElement("p")
+    userInputLocker.className = "new-task"
+    var userInput = document.querySelector(".text")
+    userInputLocker.innerText = userInput.innerText.value
+    localStorage.setItem("task", task)
+    var newTask = document.querySelector('.new-task')
+    newTask.textContent = task; 
+})
