@@ -30,7 +30,6 @@ textarea {
   border-style: dashed;
   border-color: black;
   height: 30%;
-  background-color: gray;
 }
 
 .row {
@@ -75,4 +74,16 @@ textarea {
 
 #currentDay {
   font-weight: bold;
+}
+
+.current {
+  background-color: green;
+}
+
+.upNext {
+  background-color: blue;
+}
+
+.previous {
+  background-color: grey;
 }
